@@ -18,10 +18,12 @@ sudo bash -c "$(curl -fsSL https://raw.githubusercontent.com/ScriptNinja-GNU/Ygg
 #مرحله 1 ورود به محیط روت
 
 ```bash
-sudo -i```
+sudo -i
+```
 #مرحله 2 مشاهده میزان فضای آزاد مموری
 ```bash
-free -h```
+free -h
+```
 #مرحله آخر پاکسازی cache
 
 ```bash
