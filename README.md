@@ -17,31 +17,40 @@ sudo bash -c "$(curl -fsSL https://raw.githubusercontent.com/ScriptNinja-GNU/Ygg
 
 #مرحله 1 ورود به محیط روت
 
-```sudo -i```
+```bash
+sudo -i```
 #مرحله 2 مشاهده میزان فضای آزاد مموری
-
-```free -h```
+```bash
+free -h```
 #مرحله آخر پاکسازی cache
 
-```sync; echo 1 > /proc/sys/vm/drop_caches```
-```sync; echo 2 > /proc/sys/vm/drop_caches```
-```sync; echo 3 > /proc/sys/vm/drop_caches```
+```bash
+sync; echo 1 > /proc/sys/vm/drop_caches```
+```bash
+sync; echo 2 > /proc/sys/vm/drop_caches```
+```bash
+sync; echo 3 > /proc/sys/vm/drop_caches```
 اسکریپت اجرای کلی:
 
-```bash <(curl -fsSL https://raw.githubusercontent.com/69learn/freehost/main/freehost.sh)```
+```
+bash <(curl -fsSL https://raw.githubusercontent.com/69learn/freehost/main/freehost.sh)```
 اجرای خودکار دستورات در سرور:
 
 #step1
 
-```nano freeram.sh```
+```
+nano freeram.sh```
 #step2
 
-```chmod +x freeram.sh```
+```
+chmod +x freeram.sh```
 #step3
 
-```crontab -e```
+```
+crontab -e```
 #step4
 
-```0 * * * * /root/freeram.sh```
+```
+0 * * * * /root/freeram.sh```
 اینترنت یا برای همه یا برای هیچکس!
 
