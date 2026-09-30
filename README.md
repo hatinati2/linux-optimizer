@@ -27,32 +27,43 @@ free -h
 #مرحله آخر پاکسازی cache
 
 ```bash
-sync; echo 1 > /proc/sys/vm/drop_caches```
+sync; echo 1 > /proc/sys/vm/drop_caches
+```
+
 ```bash
-sync; echo 2 > /proc/sys/vm/drop_caches```
+sync; echo 2 > /proc/sys/vm/drop_caches
+```
+
 ```bash
-sync; echo 3 > /proc/sys/vm/drop_caches```
+sync; echo 3 > /proc/sys/vm/drop_caches
+```
 اسکریپت اجرای کلی:
 
+```bash
+bash <(curl -fsSL https://raw.githubusercontent.com/69learn/freehost/main/freehost.sh)
 ```
-bash <(curl -fsSL https://raw.githubusercontent.com/69learn/freehost/main/freehost.sh)```
 اجرای خودکار دستورات در سرور:
 
 #step1
 
+```bash
+nano freeram.sh
 ```
-nano freeram.sh```
+
 #step2
 
+```bash
+chmod +x freeram.sh
 ```
-chmod +x freeram.sh```
 #step3
 
+```bash
+crontab -e
 ```
-crontab -e```
 #step4
 
+```bash
+0 * * * * /root/freeram.sh
 ```
-0 * * * * /root/freeram.sh```
 اینترنت یا برای همه یا برای هیچکس!
 
